@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 void main() {
@@ -9,7 +9,7 @@ void main() {
 	cout << int() << endl;
 
 	for (int i = 0; i < SIZE; i++) {
-		cout << "Ââåäèòå çíà÷åíèå : \n";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ : \n";
 		cin >> arr[i];
 	}
 	for (int i = 0; i < SIZE; i++) {
@@ -23,12 +23,12 @@ void main() {
 	for (int i = 0; i < SIZE; i++)
 	{
 		aref += arr[i];
-	}cout << "Ñðåäíå àðåôìåòè÷åñêîå = " << aref / SIZE << endl;
+	}cout << "Ð¡Ñ€ÐµÐ´Ð½Ðµ Ð°Ñ€ÐµÑ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ = " << aref / SIZE << endl;
 	int sum = 0;
 	for (int i = 0; i < SIZE; i++)
 	{
 		sum += arr[i];
-	}cout << "ñóìà ìàñèâà = " << sum << endl;
+	}cout << "ÑÑƒÐ¼Ð° Ð¼Ð°ÑÐ¸Ð²Ð° = " << sum << endl;
 	int maxElement = arr[0];
 	int minElement = arr[0];
 	for (int i = 0; i < SIZE; i++)
@@ -40,7 +40,7 @@ void main() {
 			minElement = arr[i];
 		}
 	}
-	cout << "Ìàêñèìàëüíûé åëåìåíò = " << maxElement << endl;
-	cout << "Ìèíåìàëüíûé åëåìåíò = " << minElement << endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÐµÐ»ÐµÐ¼ÐµÐ½Ñ‚ = " << maxElement << endl;
+	cout << "ÐœÐ¸Ð½ÐµÐ¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÐµÐ»ÐµÐ¼ÐµÐ½Ñ‚ = " << minElement << endl;
 
 }
