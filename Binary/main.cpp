@@ -17,6 +17,7 @@ void main() {
         {
             binary[count++] = '0';
         }
+
         digit = digit / 2;
     } while (digit);
     binary[count++] = '\0';

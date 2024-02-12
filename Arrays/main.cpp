@@ -7,40 +7,25 @@ void main() {
 	const int SIZE = 5;
 	int arr[SIZE];
 	cout << int() << endl;
-
+cout << "Введите значение : \n";
 	for (int i = 0; i < SIZE; i++) {
-		cout << "Введите значение : \n";
-		cin >> arr[i];
-	}
+		cin >> arr[i];}
 	for (int i = 0; i < SIZE; i++) {
 		cout << arr[i] << "\t";
-
 	}cout << endl;
 	for (int i = SIZE - 1; i >= 0; i--) {
 		cout << arr[i] << "\t";
 	}cout << endl;
-	int aref = 0;
-	for (int i = 0; i < SIZE; i++)
-	{
-		aref += arr[i];
-	}cout << "Средне арефметическое = " << aref / SIZE << endl;
 	int sum = 0;
-	for (int i = 0; i < SIZE; i++)
-	{
+	for (int i = 0; i < SIZE; i++){
 		sum += arr[i];
-	}cout << "сума масива = " << sum << endl;
-	int maxElement = arr[0];
-	int minElement = arr[0];
+	}cout << "Средне арефметическое = " << (double)sum / SIZE << endl;
+	cout << "сума масива = " << sum << endl;
+	int max, min;
+	min = max =arr[0];
 	for (int i = 0; i < SIZE; i++)
-	{
-		if (arr[i] > maxElement) {
-			maxElement = arr[i];
-		}
-		if (arr[i] < minElement) {
-			minElement = arr[i];
-		}
-	}
-	cout << "Максимальный елемент = " << maxElement << endl;
-	cout << "Минемальный елемент = " << minElement << endl;
-
+	{if (arr[i] > max) max = arr[i];
+		if (arr[i] < min) min = arr[i];}
+	cout << "Максимальный елемент = " << max << endl;
+	cout << "Минемальный елемент = " << min << endl;
 }
