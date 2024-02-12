@@ -1,10 +1,10 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 void main() {
     setlocale(LC_ALL, "");
     int count = 0;
     int digit;
-    cout << "Ââåäèòå äåñÿòè÷íîå ÷èñëî" << endl;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾" << endl;
     cin >> digit;
     char binary[50];
     do
