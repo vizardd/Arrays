@@ -4,9 +4,10 @@ void main() {
     setlocale(LC_ALL, "");
     int count = 0;
     int digit;
+    const int bin = 50;
     cout << "Введите десятичное число" << endl;
     cin >> digit;
-    char binary[50];
+    char binary[bin];
     do
     {
         if (digit % 2)
